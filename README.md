@@ -1,16 +1,29 @@
-# fruit_app
+# Purpose
 
-A new Flutter project.
+I made 2 screens. Because of my goal is familiar with some flutter widget, so i just focus UI.
 
-## Getting Started
+#### Note
 
-This project is a starting point for a Flutter application.
+Because some deprecated library, we need run app with flag "--no-sound-null-safety"
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+ flutter run --no-sound-null-safety
+```
+or add local config for vscode. Make  ```.vscode/setting.json```
+```json 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+{
+    "dart.flutterAdditionalArgs": [
+        "--no-sound-null-safety"
+    ],
+} 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```
+
+# Result
+
+- **_Home_**
+  <img src ="./demo_ui/home.png">
+
+- **_Detail_**
+  <img src ="./demo_ui/details.png">
