@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:fruit_app/screens/details/details_screen.dart';
 import 'package:fruit_app/screens/home/components/recommend_card.dart';
 
 import 'feature_card.dart';
@@ -19,21 +21,30 @@ class FeatureBlock extends StatelessWidget {
               price: 100,
               title: "abc",
               subTitle: "Russia",
-              onPress: () {},
+              onPress: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => DetailsScreen()));
+              },
             ),
             FeatureCard(
               imageUrl: "assets/images/bottom_img_1.png",
               price: 100,
               title: "abc",
               subTitle: "Russia",
-              onPress: () {},
+              onPress: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => DetailsScreen()));
+              },
             ),
             FeatureCard(
               imageUrl: "assets/images/bottom_img_1.png",
               price: 100,
               title: "abc",
               subTitle: "Russia",
-              onPress: () {},
+              onPress: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => DetailsScreen()));
+              },
             ),
           ],
         ));

@@ -1,4 +1,6 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:fruit_app/screens/details/details_screen.dart';
 import 'package:fruit_app/screens/home/components/recommend_card.dart';
 
 class RecommendBlock extends StatelessWidget {
@@ -17,21 +19,30 @@ class RecommendBlock extends StatelessWidget {
               price: 100,
               title: "abc",
               subTitle: "Russia",
-              onPress: () {},
+              onPress: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => DetailsScreen()));
+              },
             ),
             RecommendCard(
               imageUrl: "assets/images/image_1.png",
               price: 100,
               title: "abc",
               subTitle: "Russia",
-              onPress: () {},
+              onPress: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => DetailsScreen()));
+              },
             ),
             RecommendCard(
               imageUrl: "assets/images/image_1.png",
               price: 100,
               title: "abc",
               subTitle: "Russia",
-              onPress: () {},
+              onPress: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => DetailsScreen()));
+              },
             ),
           ],
         ));
