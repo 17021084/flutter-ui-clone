@@ -9,21 +9,23 @@ Because some deprecated library, we need run app with flag "--no-sound-null-safe
 ```bash
  flutter run --no-sound-null-safety
 ```
-or add local config for vscode. Make  ```.vscode/setting.json```
-```json 
 
+or add local config for vscode. Make `.vscode/setting.json`
+
+```json
 {
-    "dart.flutterAdditionalArgs": [
-        "--no-sound-null-safety"
-    ],
-} 
-
+  "dart.flutterAdditionalArgs": ["--no-sound-null-safety"]
+}
 ```
+
+#### vscode error
+
+We cant find device even run flutter doctor have no problem. because we setting ` --no-sound-null-safety`
 
 # Result
 
-- **_Home_**
-  <img src ="./demo_ui/home.png">
-
-- **_Detail_**
-  <img src ="./demo_ui/details.png">
+  <div style="display:flex">
+  <img src ="./demo_ui/home.png" width="200px" height="auto">
+  <div>　　　</div>
+  <img src ="./demo_ui/details.png" width="200px" height="auto">
+  </div>
