@@ -3,9 +3,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:fruit_app/constant.dart';
+import 'package:fruit_app/screens/home/components/recommend_block.dart';
 import 'package:fruit_app/screens/home/components/recommend_card.dart';
 import 'package:fruit_app/screens/home/components/title_with_button.dart';
 
+import 'feature_block.dart';
 import 'header_with_search_box.dart';
 
 class Body extends StatelessWidget {
@@ -16,6 +18,8 @@ class Body extends StatelessWidget {
 
     // scolleable container
     return SingleChildScrollView(
+      physics:
+          const ClampingScrollPhysics(), // disable scroll over the top of the screen
       child: Column(
         children: <Widget>[
           HeaderWithSeachBox(size: size),
@@ -23,33 +27,12 @@ class Body extends StatelessWidget {
             title: "Top Recommends",
             onPress: () {},
           ),
-          SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: [
-                  RecommendCard(
-                    imageUrl: "assets/images/image_1.png",
-                    price: 100,
-                    title: "abc",
-                    subTitle: "Russia",
-                    onPress: () {},
-                  ),
-                  RecommendCard(
-                    imageUrl: "assets/images/image_1.png",
-                    price: 100,
-                    title: "abc",
-                    subTitle: "Russia",
-                    onPress: () {},
-                  ),
-                  RecommendCard(
-                    imageUrl: "assets/images/image_1.png",
-                    price: 100,
-                    title: "abc",
-                    subTitle: "Russia",
-                    onPress: () {},
-                  ),
-                ],
-              ))
+          RecommendBlock(),
+          TitleWithButton(
+            title: "Feature ",
+            onPress: () {},
+          ),
+          FeatureBlock()
         ],
       ),
     );

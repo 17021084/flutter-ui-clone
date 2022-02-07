@@ -18,6 +18,9 @@ class HomeScreen extends StatelessWidget {
           ),
           title: Text('Home'),
         ),
-        body: Body());
+        body: Body(),
+        bottomNavigationBar: Container(
+          height: 60,
+        ));
   }
 }
